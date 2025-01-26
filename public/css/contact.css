@@ -1,0 +1,101 @@
+.contact-container-1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 100px 0;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+@media(max-width: 700px){
+    .contact-container-1{
+        flex-direction: column;
+    }
+}
+
+form{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-form{
+    width: 980px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+}
+
+.pair{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.form-input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px 2px;
+}
+
+input[type =text], [type =date], [type = search], [type = password], select, option{
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #111;
+    padding: 5px;
+}
+
+input[type = submit]{
+    width: auto;
+    outline: none;
+    border: none;
+    background-color: #111;
+    color: whitesmoke;
+    padding: 9px;
+}
+
+input::placeholder {
+    color: #111;
+   /* opacity: 0.5;*/
+    font-size: 14px;
+    }
+
+.contact-form-submit-btn{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 7px;
+    margin: 0 2px;
+}
+
+.message{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #111;
+    width: 980px;
+}
+
+.message::placeholder{
+    color: #111;
+    /* opacity: 0.5;*/
+     font-size: 14px;
+}
+
+@media(max-width: 850px){
+    .message{
+        width: auto;
+    }
+
+    .contact-form{
+        width: auto;
+    }
+    
+}

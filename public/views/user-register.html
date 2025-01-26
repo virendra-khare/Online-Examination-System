@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/body.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <title>Document</title>
+
+    <style>
+.dob{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+    </style>
+</head>
+<body>
+     <!-- CONTACT SECTION START -->
+     <div class="container-1" id="contact">
+        <div class="contact-form">
+            <h1 id="heading">REGISTER YOUR SELF</h1>
+            <h3>Message</h3>
+            <form action="../../server/login-register.php" method="post">
+                <div class="pair">
+                    <div class="form-input"><input type="text" name="name" placeholder="Full Name:"></div>
+                </div>
+                <div class="pair">
+                    <div class="form-input"><input type="text" name="email" placeholder="E-mail:"></div>
+                </div>
+                <div class="pair">
+                    <div class="form-input"><input type="text" name="phone-no" placeholder="Phone No.:" maxlength="10"></div>
+                </div>
+                <div class="pair">
+                    <div class="form-input">
+                        <select name="course" id="course">
+                        <option value="">Select Your Course</option>
+                        <option value="BCA">BCA</option>
+                        <option value="B.COM">B.COM</option>
+                        <option value="ARTS">ARTS</option>
+                        <option value="B.SC">B.SC</option>
+                        </select>
+                    </div>
+                    <div class="form-input">
+                        <select name="year" id="year">
+                            <option value="">Select Your Year</option>
+                            <option value="I">I</option>
+                            <option value="II">II</option>
+                            <option value="III">III</option>
+                            <option value="Sem I">Sem I</option>
+                            <option value="Sem II">Sem II</option>
+                            <option value="Sem III">Sem III</option>
+                            <option value="Sem IV">Sem IV</option>
+                            <option value="Sem V">Sem V</option>
+                            <option value="Sem VI">Sem VI</option>
+                            </select>
+                    </div>
+                </div>
+                <div class="pair">
+                    <div class="form-input">
+                        <select name="gender" id="gender">
+                            <option value="">Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="pair">
+                    <div class="dob">
+                        <div class="form-input">
+                            <label for="dob" style="color: #111; font-size: 14px;">Date of Birth</label>
+                        </div>
+                        <div class="form-input">
+                            <input type="date" style="outline: none;" name="dob" placeholder="Select Your Course">
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-submit-btn">
+                    <span><input type="submit" name="register"></span>
+                </div>
+            </form>
+            <br>
+            <p>I have Already an <a href="user-login.html" style="color: #007FFF; text-decoration: none;">account.</a></p>
+        </div>
+    
+</div>
+<!-- CONTACT SECTION END -->
+
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+.login-container-1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+@media(max-width: 700px){
+    .login-container-1{
+        flex-direction: column;
+    }
+}
+
+form{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-form{
+    min-width: 450px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+}
+
+.pair{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.form-input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px 2px;
+}
+
+input[type =text], [type =date], [type = search], [type = password], select, option{
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #111;
+    padding: 5px;
+}
+
+input[type = submit]{
+    width: auto;
+    outline: none;
+    border: none;
+    background-color: #111;
+    color: whitesmoke;
+    padding: 9px;
+}
+
+input::placeholder {
+    color: #111;
+   /* opacity: 0.5;*/
+    font-size: 14px;
+    }
+
+.contact-form-submit-btn{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 7px;
+    margin: 0 2px;
+}
+/* Login Secton */
+.forget-btn{
+    color: #007FFF; 
+    text-decoration: none; 
+    text-align: right;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+ 
+ 
+ /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+

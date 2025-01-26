@@ -1,0 +1,60 @@
+<?php
+    
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/body.css">
+</head>
+<body>
+     <!-- Login SECTION START -->
+     <div class="login-container-1" id="contact">
+        <div class="content">
+            <div style="width: 100%; margin: 20px;">
+                <h2 style="text-align: center;">Wellcome Back</h2>
+                <figure><img style="width: 550px;" src="../images/9fc2126eec2c0a3876e3f2097af9b983.gif" alt=""></figure>
+                <p style="text-align: center;">I have not any <a href="user-register.html" style="color: #007FFF; text-decoration: none;">account.</a></p>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h1 id="heading">Login: Student</h1>
+            <h3>Message</h3>
+            <form action="../../server/login-register.php" method="post">
+                <div class="pair">
+                    <div class="form-input"><input type="text" name="userid" placeholder="User Id or E-mail"></div>
+                </div>
+                <div class="pair">
+                    <div class="form-input"><input type="password" name="password" placeholder="Password"></div>
+                </div>
+              
+                <div class="contact-form-submit-btn">
+                    <span><input type="submit" name="login"></span>
+                </div>
+            </form>
+            <br>
+            <button id="myBtn" class="forget-btn">Forget</button>
+            <!--Pop Form Start-->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p><a href="#" style="text-decoration: none; color: #111;">Forget ID</a><br></p>
+                  <p><a href="#" style="text-decoration: none; color: #111;">Forget Password</a><br></p>
+                  <p><a href="#" style="text-decoration: none; color: #111;">Forget Both</a></p>
+                </div>
+            </div>
+            <!--Pop Form End-->
+        </div>
+</div>
+<!-- Login SECTION END -->
+
+<script src="../js/login.js"></script>
+
+
+</body>
+</html>
